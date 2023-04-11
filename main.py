@@ -22,7 +22,7 @@ def on_message(msg, bot=counting):
 	try:
 		if msg.data.startswith(bot.prefix):
 			msg.data = msg.data.split(bot.prefix, 1)[1]
-                        bot.run_command(msg)
+			bot.run_command(msg)
 	except: traceback.print_exc()
   
 	if msg.chat != env["counting_chat"]: return 
